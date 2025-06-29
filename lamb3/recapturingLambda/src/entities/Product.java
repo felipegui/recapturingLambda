@@ -30,6 +30,10 @@ public class Product {
         p.setPrice(p.getPrice() * 1.1);
     }
 
+    public void noStaticPriceUpdate() {
+        setPrice(getPrice() * 1.1);
+    }
+
     public String toString() {
         return name + ", " + String.format("%.2f", price);
     }
